@@ -14,7 +14,7 @@ struct HumanData {
 	}
 };
 istream& operator >>(istream& in, HumanData& data) {
-	getline(in, data.address);
+	getline(in, data.address,'-');
 	getline(in, data.phone);
 	return in;
 }
